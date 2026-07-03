@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page personal de Juan Bajaña, estudiante de Medicina Veterinaria y creador de proyectos digitales como Suite Vet, Cartilla Digital y CATTLE."
+    />
+    <meta name="theme-color" content="#0A66C2" />
+    <title>Juan Bajaña | Veterinaria, Tecnología y Campo Digital</title>
+
+    <!-- Reemplazar con un favicon real cuando esté disponible. -->
+    <!-- <link rel="icon" href="assets/favicon.ico" /> -->
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="stylesheet" href="css/styles.css?v=7" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+    <header class="site-header" id="siteHeader">
+      <nav class="navbar container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__mark">JB</span>
+          <span class="brand__copy">
+            <strong>Juan Bajaña</strong>
+            <small>VetTech & Campo Digital</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#mision-vision">Misión y Visión</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="inicio">
+        <div class="hero__pattern" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <span class="eyebrow">Veterinaria aplicada + tecnología real</span>
+            <h1>Veterinaria, tecnología y soluciones digitales para el campo</h1>
+            <p class="hero__lead">
+              Soy Juan Bajaña, estudiante de Medicina Veterinaria y creador de
+              herramientas digitales que buscan transformar el aprendizaje
+              veterinario, la gestión clínica y el manejo productivo de los
+              animales.
+            </p>
+            <p class="hero__quote">
+              No creo proyectos aislados. Estoy construyendo un ecosistema
+              veterinario digital.
+            </p>
+            <div class="hero__actions" aria-label="Acciones principales">
+              <a class="btn btn--primary" href="#proyectos">Ver mis proyectos</a>
+              <a class="btn btn--ghost" href="#contacto">Contactarme</a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal" aria-label="Foto personal de Juan Bajaña">
+            <div class="hero-card__visual">
+              <span class="hero-card__badge">VetTech</span>
+              <img
+                class="hero-card__image"
+                src="assets/juan-bajana-perro.jpeg"
+                alt="Juan Bajaña junto a un perro en exteriores"
+              />
+              <div class="hero-card__overlay">
+                <span>Foto de Juan</span>
+                <strong>Veterinaria + Tecnología</strong>
+              </div>
+            </div>
+            <div class="hero-card__stats">
+              <article>
+                <strong>3</strong>
+                <span>proyectos eje</span>
+              </article>
+              <article>
+                <strong>360</strong>
+                <span>visión animal</span>
+              </article>
+              <article>
+                <strong>IA</strong>
+                <span>datos + campo</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="sobre-mi">
+        <div class="container section-grid section-grid--about">
+          <div class="section-copy reveal">
+            <span class="eyebrow">Sobre mí</span>
+            <h2>Una visión veterinaria que también se construye con código</h2>
+            <p>
+              Soy Juan Bajaña, estudiante de Medicina Veterinaria en la
+              Universidad Técnica de Machala. Me apasionan los animales, el
+              campo, la producción animal y la programación. Desde mi formación
+              académica he buscado crear herramientas que no se queden solo en
+              ideas, sino que puedan resolver problemas reales para estudiantes,
+              clínicas veterinarias, tutores de mascotas y granjas.
+            </p>
+          </div>
+
+          <div class="feature-grid reveal">
+            <article class="feature-card">
+              <span aria-hidden="true">🐾</span>
+              <h3>Medicina Veterinaria</h3>
+              <p>Formación enfocada en salud animal, producción y aprendizaje aplicado.</p>
+            </article>
+            <article class="feature-card">
+              <span aria-hidden="true">💻</span>
+              <h3>Soluciones digitales</h3>
+              <p>Herramientas pensadas para ordenar información y volverla útil.</p>
+            </article>
+            <article class="feature-card">
+              <span aria-hidden="true">🐄</span>
+              <h3>Campo y animales</h3>
+              <p>Enfoque en clínicas, tutores, estudiantes y sistemas productivos.</p>
+            </article>
+            <article class="feature-card">
+              <span aria-hidden="true">📊</span>
+              <h3>Datos e innovación</h3>
+              <p>Interés en IA, NFC, estadística y sistemas de gestión veterinaria.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section mission" id="mision-vision">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Misión y Visión</span>
+            <h2>Herramientas con propósito para una veterinaria más conectada</h2>
+          </div>
+
+          <div class="mission-grid">
+            <article class="mission-card reveal">
+              <span class="mission-card__icon" aria-hidden="true">💻</span>
+              <h3>Misión</h3>
+              <p>
+                Desarrollar herramientas digitales accesibles, prácticas y útiles
+                para mejorar el aprendizaje veterinario, la gestión clínica y el
+                manejo productivo de los animales, integrando conocimiento
+                veterinario, programación, datos y tecnología aplicada al campo.
+              </p>
+            </article>
+            <article class="mission-card mission-card--dark reveal">
+              <span class="mission-card__icon" aria-hidden="true">🐾</span>
+              <h3>Visión</h3>
+              <p>
+                Construir un ecosistema tecnológico veterinario que conecte la
+                educación, las clínicas, los tutores de mascotas y las granjas,
+                permitiendo que la información animal sea más organizada, segura,
+                accesible y útil para tomar mejores decisiones.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="proyectos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Mis proyectos</span>
+            <h2>Cada proyecto nace de un problema real</h2>
+            <p>
+              Cada proyecto nace de un problema real y busca convertirse en una
+              herramienta útil para estudiantes, clínicas, tutores y granjas.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="project-card__icon" aria-hidden="true">📚</span>
+                <span class="badge">Para estudiantes de Medicina Veterinaria</span>
+              </div>
+              <h3>Suite Vet</h3>
+              <div class="project-card__body">
+                <h4>Problema que resuelve</h4>
+                <p>
+                  Muchos estudiantes tienen información dispersa en apuntes,
+                  PDFs, imágenes, tablas y clases. Suite Vet busca organizar ese
+                  conocimiento en una plataforma práctica, interactiva y útil
+                  para estudiar.
+                </p>
+                <h4>Descripción</h4>
+                <p>
+                  Suite Vet es una herramienta académica pensada para estudiantes
+                  de veterinaria. Integra módulos de estudio, calculadoras, casos
+                  clínicos, farmacología, fisiología, microbiología, nutrición
+                  animal y otras áreas clave de la carrera.
+                </p>
+                <h4>Toque diferencial</h4>
+                <p>
+                  No es solo una app de apuntes. Es una plataforma de estudio
+                  veterinario con herramientas para aprender, calcular, repasar y
+                  aplicar conocimientos en clases.
+                </p>
+              </div>
+              <!-- Reemplazar href="#" con el enlace real de Suite Vet. -->
+              <a class="btn btn--project" href="#" aria-label="Visitar Suite Vet">Visita Suite Vet</a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="project-card__icon" aria-hidden="true">🐶</span>
+                <span class="badge">Para clínicas veterinarias y tutores</span>
+              </div>
+              <h3>Cartilla Digital</h3>
+              <div class="project-card__body">
+                <h4>Problema que resuelve</h4>
+                <p>
+                  Las cartillas físicas se pierden, se dañan o se olvidan.
+                  Además, muchas clínicas necesitan organizar mejor sus registros
+                  preventivos, vacunas, desparasitaciones y controles.
+                </p>
+                <h4>Descripción</h4>
+                <p>
+                  Cartilla Digital es una plataforma para clínicas veterinarias
+                  que permite registrar pacientes, tutores, vacunas,
+                  desparasitaciones, controles preventivos y próximos eventos de
+                  salud. También permite que el tutor acceda a la información de
+                  su mascota de forma digital.
+                </p>
+                <h4>Toque diferencial</h4>
+                <p>
+                  Convierte la cartilla tradicional en un sistema digital moderno,
+                  con historial organizado, códigos QR, vista para tutores,
+                  recordatorios y mejor control preventivo.
+                </p>
+              </div>
+              <!-- Reemplazar href="#" con el enlace real de Cartilla Digital. -->
+              <a class="btn btn--project" href="#" aria-label="Visitar Cartilla Digital">Visita Cartilla Digital</a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="project-card__icon" aria-hidden="true">🐄</span>
+                <span class="badge">Para granjas porcinas y bovinas</span>
+              </div>
+              <h3>Ecosistema CATTLE</h3>
+              <div class="project-card__body">
+                <h4>Problema que resuelve</h4>
+                <p>
+                  Muchas granjas manejan la información productiva en cuadernos,
+                  hojas sueltas o archivos de Excel desordenados. Esto dificulta
+                  controlar animales, producción, reproducción, sanidad, costos y
+                  decisiones.
+                </p>
+                <h4>Descripción</h4>
+                <p>
+                  CATTLE es un ecosistema de soluciones digitales para el manejo
+                  animal en granjas. Su objetivo es organizar la información
+                  productiva, sanitaria, reproductiva y económica de los animales
+                  mediante herramientas adaptadas al campo.
+                </p>
+                <ul class="project-card__list">
+                  <li>CATTLE Porcinos: gestión para granjas porcinas.</li>
+                  <li>CATTLE Bovinos: visión futura para ganadería bovina.</li>
+                </ul>
+                <h4>Toque diferencial</h4>
+                <p>
+                  CATTLE busca integrar identificación animal, registros
+                  digitales, análisis estadístico, finanzas, inteligencia
+                  artificial y tecnología NFC para mejorar el manejo en campo.
+                </p>
+              </div>
+              <!-- Reemplazar href="#" con el enlace real de CATTLE. -->
+              <a class="btn btn--project" href="#" aria-label="Visitar CATTLE">Visita CATTLE</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ecosystem" aria-labelledby="ecosistema-title">
+        <div class="container">
+          <div class="ecosystem-panel reveal">
+            <span class="eyebrow">Ecosistema</span>
+            <h2 id="ecosistema-title">Un ecosistema veterinario digital en crecimiento</h2>
+            <p>
+              Suite Vet forma al estudiante. Cartilla Digital digitaliza la
+              clínica. CATTLE transforma la gestión de granjas. Juntos
+              representan una visión: unir veterinaria, tecnología, datos e
+              innovación para resolver problemas reales.
+            </p>
+            <div class="ecosystem-flow" aria-label="Flujo del ecosistema">
+              <span>Suite Vet</span>
+              <i aria-hidden="true"></i>
+              <span>Cartilla Digital</span>
+              <i aria-hidden="true"></i>
+              <span>CATTLE</span>
+            </div>
+            <strong>Educación veterinaria + salud animal + producción animal + tecnología</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="galeria">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Galería</span>
+            <h2>Imágenes para mostrar la historia, el campo y los avances</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item gallery-item--large reveal">
+              <div role="img" aria-label="Espacio para foto personal">Foto personal</div>
+              <figcaption>Juan Bajaña</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <div role="img" aria-label="Espacio para foto en campo con animales">Campo y animales</div>
+              <figcaption>Experiencia en campo</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <div role="img" aria-label="Espacio para captura de Suite Vet">Suite Vet</div>
+              <figcaption>Herramienta académica</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <div role="img" aria-label="Espacio para captura de Cartilla Digital">Cartilla Digital</div>
+              <figcaption>Gestión clínica</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <div role="img" aria-label="Espacio para mockup de CATTLE">CATTLE</div>
+              <figcaption>Gestión de granjas</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <div role="img" aria-label="Espacio para prototipos y avances">Prototipos y avances</div>
+              <figcaption>Ideas en desarrollo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline" aria-labelledby="camino-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Mi camino</span>
+            <h2 id="camino-title">Una ruta construida entre aprendizaje, animales y tecnología</h2>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="reveal">
+              <span>Inicio</span>
+              <p>Interés por la veterinaria, los animales y el campo.</p>
+            </li>
+            <li class="reveal">
+              <span>Aprendizaje</span>
+              <p>Primeros pasos en programación y desarrollo web.</p>
+            </li>
+            <li class="reveal">
+              <span>Suite Vet</span>
+              <p>Creación de una herramienta académica para estudiantes de veterinaria.</p>
+            </li>
+            <li class="reveal">
+              <span>Cartilla Digital</span>
+              <p>Digitalización de registros preventivos para clínicas y tutores.</p>
+            </li>
+            <li class="reveal">
+              <span>CATTLE</span>
+              <p>Construcción de un ecosistema para granjas porcinas y bovinas.</p>
+            </li>
+            <li class="reveal">
+              <span>Futuro</span>
+              <p>Apps móviles, IA, NFC, análisis de datos y tecnología aplicada al campo.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div>
+              <span class="eyebrow">Contacto</span>
+              <h2>Construyamos algo con propósito</h2>
+              <p>
+                Estoy abierto a seguir aprendiendo, colaborar, presentar mis
+                proyectos y crear soluciones que conecten la veterinaria con la
+                tecnología.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn--primary" href="mailto:bajanajuan710@gmail.com">Escríbeme</a>
+              <a class="btn btn--ghost btn--light" href="#proyectos">Ver proyectos</a>
+            </div>
+
+            <ul class="contact-links" aria-label="Enlaces de contacto">
+              <li>
+                <span>Correo</span>
+                <a href="mailto:bajanajuan710@gmail.com">bajanajuan710@gmail.com</a>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <!-- Reemplazar href="#" con el enlace real de GitHub. -->
+                <a href="#">Placeholder editable</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <!-- Reemplazar href="#" con el enlace real de LinkedIn. -->
+                <a href="#">Placeholder editable</a>
+              </li>
+              <li>
+                <span>Redes</span>
+                <!-- Reemplazar href="#" con el enlace real de Instagram u otra red. -->
+                <a href="#">Placeholder editable</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© 2026 Juan Bajaña. Veterinaria, tecnología y campo digital.</p>
+        <p>Creado con visión, propósito y ganas de transformar el futuro veterinario.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js?v=1"></script>
+  </body>
+</html>
