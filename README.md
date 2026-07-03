@@ -24,5 +24,5 @@ Abre `index.html` directamente en el navegador. Tambien puedes publicarlo en Git
 ## Pendientes editables
 
 - Reemplazar placeholders por fotos reales o capturas de proyectos.
-- Cambiar los `href="#"` por enlaces reales de Suite Vet, Cartilla Digital, CATTLE, GitHub, LinkedIn y redes.
+- Cambiar los `href="#"` por enlaces reales de CATTLE, GitHub, LinkedIn y redes.
 - Agregar un favicon real cuando este disponible.
