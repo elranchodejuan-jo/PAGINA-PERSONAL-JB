@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="assets/site-icon-512.png" />
+    <!-- Preload de imágenes del hero: agregar aquí cuando se carguen las fotografías reales. -->
 
     <link
       rel="preload"
@@ -26,7 +27,7 @@
         rel="stylesheet"
       />
     </noscript>
-    <link rel="stylesheet" href="css/styles.css?v=7" />
+    <link rel="stylesheet" href="css/styles.css?v=14" />
   </head>
   <body>
     <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
@@ -66,53 +67,89 @@
 
     <main>
       <section class="hero section" id="inicio">
-        <div class="hero__pattern" aria-hidden="true"></div>
-        <div class="container hero__grid">
-          <div class="hero__content reveal">
-            <span class="eyebrow">Veterinaria aplicada + tecnología real</span>
-            <h1>Veterinaria, tecnología y soluciones digitales para el campo</h1>
-            <p class="hero__lead">
-              Soy Juan Bajaña, estudiante de Medicina Veterinaria y creador de
-              herramientas digitales que buscan transformar el aprendizaje
-              veterinario, la gestión clínica y el manejo productivo de los
-              animales.
-            </p>
-            <p class="hero__quote">
-              No creo proyectos aislados. Estoy construyendo un ecosistema
-              veterinario digital.
-            </p>
-            <div class="hero__actions" aria-label="Acciones principales">
-              <a class="btn btn--primary" href="#proyectos">Ver mis proyectos</a>
-              <a class="btn btn--ghost" href="#contacto">Contactarme</a>
+        <div
+          class="journey-carousel hero__carousel"
+          data-journey-carousel
+          aria-roledescription="carrusel"
+          aria-label="Diapositivas del encabezado"
+          tabindex="0"
+        >
+          <div class="journey-carousel__viewport">
+            <div class="journey-carousel__track" id="journeySlides" data-carousel-track aria-live="off">
+              <!-- Respaldo sin JavaScript. El arreglo heroSlides en js/main.js controla las diapositivas. -->
+              <figure class="journey-carousel__slide" data-carousel-slide aria-hidden="false">
+                <div
+                  class="journey-carousel__slide-bg"
+                  style="background: linear-gradient(135deg, #07182d 0%, #0a4a8a 40%, #0f8de8 70%, #38bdf8 100%)"
+                  role="img"
+                  aria-label="Imagen horizontal del encabezado 1"
+                ><span class="journey-carousel__slide-label">Imagen horizontal 1</span></div>
+              </figure>
             </div>
           </div>
 
-          <div class="hero-card reveal" aria-label="Foto personal de Juan Bajaña">
-            <div class="hero-card__visual">
-              <span class="hero-card__badge">VetTech</span>
-              <img
-                class="hero-card__image"
-                src="assets/juan-bajana-perro.jpeg"
-                alt="Juan Bajaña junto a un perro en exteriores"
-              />
-              <div class="hero-card__overlay">
-                <span>Foto de Juan</span>
-                <strong>Veterinaria + Tecnología</strong>
+          <!-- Flechas laterales -->
+          <button class="hero-carousel__arrow hero-carousel__arrow--prev" type="button" data-carousel-prev aria-label="Diapositiva anterior" disabled>
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button class="hero-carousel__arrow hero-carousel__arrow--next" type="button" data-carousel-next aria-label="Siguiente diapositiva" disabled>
+            <span aria-hidden="true">›</span>
+          </button>
+          <!-- Indicadores -->
+          <div class="hero-carousel__indicators" data-carousel-dots role="tablist" aria-label="Seleccionar diapositiva">
+            <button type="button" role="tab" aria-selected="true" aria-controls="journeySlides" aria-label="Ver diapositiva 1" disabled></button>
+          </div>
+          <p class="visually-hidden" data-carousel-status aria-live="polite">Diapositiva 1 de 4</p>
+        </div>
+
+        <div class="hero__below">
+          <div class="hero__pattern" aria-hidden="true"></div>
+          <div class="container hero__grid">
+            <div class="hero__content reveal">
+              <span class="eyebrow">VETERINARIA APLICADA + TECNOLOGÍA REAL</span>
+              <h1>Veterinaria, tecnología y soluciones digitales para el campo</h1>
+              <p class="hero__lead">
+                Soy Juan Bajaña, estudiante de Medicina Veterinaria y creador de
+                herramientas digitales que buscan transformar el aprendizaje
+                veterinario, la gestión clínica y el manejo productivo de los
+                animales.
+              </p>
+              <p class="hero__quote">
+                No creo proyectos aislados. Estoy construyendo un ecosistema
+                veterinario digital.
+              </p>
+              <div class="hero__actions" aria-label="Acciones principales">
+                <a class="btn btn--primary" href="#proyectos">Ver mis proyectos</a>
+                <a class="btn btn--ghost" href="#contacto">Contactarme</a>
               </div>
             </div>
-            <div class="hero-card__stats">
-              <article>
-                <strong>3</strong>
-                <span>proyectos eje</span>
-              </article>
-              <article>
-                <strong>360</strong>
-                <span>visión animal</span>
-              </article>
-              <article>
-                <strong>IA</strong>
-                <span>datos + campo</span>
-              </article>
+
+            <div class="hero__visual reveal">
+              <div class="hero-card">
+                <div class="hero-card__visual">
+                  <span class="hero-card__badge">VetTech</span>
+                  <img src="assets/juan-bajana-perro.jpeg" alt="Juan y su perro" class="hero-card__image" />
+                  <div class="hero-card__overlay">
+                    <span>FOTO DE JUAN</span>
+                    <strong>Veterinaria + Tecnología</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-card__stats hero__stats" aria-label="Datos clave">
+                <article>
+                  <strong>3</strong>
+                  <span>proyectos eje</span>
+                </article>
+                <article>
+                  <strong>360</strong>
+                  <span>visión animal</span>
+                </article>
+                <article>
+                  <strong>IA</strong>
+                  <span>datos + campo</span>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -449,6 +486,6 @@
       </div>
     </footer>
 
-    <script src="js/main.js?v=1"></script>
+    <script src="js/main.js?v=3"></script>
   </body>
 </html>
